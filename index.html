@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<title>Chartered Accountants</title>
+<meta charset="utf-8"/>
+<meta name="Description" content="Chartered Accountants" />
+<meta name="keywords" content="Chartered Accountants" />
+<meta property="og:title" content="Chartered Accountants" />
+<meta property="og:description" content="Chartered Accountants" />
+<meta property="og:image" content="images/logo.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta http-equiv="Content-Language" content="EN" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<title>Chartered Accountants</title>
+<meta charset="utf-8"/>
+<meta name="Description" content="Chartered Accountants" />
+<meta name="keywords" content="Chartered Accountants" />
+<meta property="og:title" content="Chartered Accountants" />
+<meta property="og:description" content="Chartered Accountants" />
+<meta property="og:image" content="images/logo.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta http-equiv="Content-Language" content="EN" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/aos.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    </head>
+    <body data-aos-easing="ease-in-out-sine" data-aos-duration="400" data-aos-delay="0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script> 
+    $(function(){
+      $("#header-top-fixed").load("https://caportal.saginfotech.com/iframe-header.php"); 
+    });
+    </script> 
+   
+  <div>
+    </style>    
+      
+        
+    
+    
+     <script>
+          let modalBtns = [...document.querySelectorAll(".button")];
+          modalBtns.forEach(function (btn) {
+            btn.onclick = function () {
+              let modal = btn.getAttribute("data-modal");
+              document.getElementById(modal).style.display = "block";
+            };
+          });
+          let closeBtns = [...document.querySelectorAll(".close")];
+          closeBtns.forEach(function (btn) {
+            btn.onclick = function () {
+              let modal = btn.closest(".modal");
+              modal.style.display = "none";
+            };
+          });
+          window.onclick = function (event) {
+            if (event.target.className === "modal") {
+              event.target.style.display = "none";
+            }
+          };
+          
+          
+          
+    function frmvlid() {
+        var name = $("#fname").val();
+        var mobile = $("#fmobile").val();
+        var email = $("#femail").val();
+        var message = $("#fmessage").val();  
+        var filtermobile = /^\d{10,13}$/;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+        if(name == '') {
+            document.getElementById('fnmsg').innerHTML="<span class='err'>Please Fill Name!</span>"; 
+            $('#fnmsg').slideDown(500); 
+            return false;
+        }else{
+            $('#fnmsg').slideUp(500);
+        }
+    
+        if(mobile == '') {
+            document.getElementById('fmmsg').innerHTML="<span class='err'>Please Fill Mobile!</span>"; 
+            return false;
+        }else{
+            if(!filtermobile.test(mobile)) {
+                document.getElementById('fmmsg').innerHTML="<span class='err'>Please Fill Correct Mobile!</span>"; 
+                $('#fmmsg').slideDown(500);
+                return false;
+            }else{
+                $('#fmmsg').slideUp(500); 
+            }
+        }
+    
+        if(email == '') {
+            document.getElementById('femsg').innerHTML="<span class='err'>Please Fill Email!</span>"; 
+            return false;
+        }else{
+            if (!filter.test(email)) { 
+                document.getElementById('femsg').innerHTML="<span class='err'>Please Enter Correct Email ID!</span>"; $('#femsg').slideDown(500); 
+                return false;
+            }else {
+                $('#femsg').slideUp(500);
+            }
+        }
+    }   
+    
+    
+    
+        </script>
+    </div>
+    <div class="wapper">
+      <header class="header">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="top-lt-info">
+                  <div class="top-info-d"> <i class="fa fa-envelope-o"></i><a  href="mailto:caronakd@gmail.com"> <span>caronakd@gmail.com</span> </div>
+                  <div class="top-info-d" > <i class="fa fa-phone"  ></i> <a href="tel:7058256866"><span >+91 7058256866</span> </div>
+                </div> 
+              </div>
+              <div class="col-md-6">
+                <div class="pull-right">
+                  <div class="top-lt-info social-top">
+                    <ul>
+                      <li>Connect With <span>Us</span></li>
+                      <li><a class="icon-fa-facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="icon-fa-instagram" href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                      <li><a class="icon-fa-rss" href="#" target="_blank"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg static-top">
+          <div class="header-logo">
+            <div class="container">
+              <div class="row">
+                <div class="logo col-md-6">
+                  <div class="navbar-header"> <a href="#" class="navbar-brand"><img src="images/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  </div>
+                </div>
+                <div class="info col-md-6"  >
+                  <ul>
+                    <li><img src="images/time.png">
+                      <p> <span class="heading">Contact Time</span> <span>Mon-Sat: 09.00 - 07.00</span> </p>
+                    </li>
+                   <!--  <li class="last"><img src="images/email.png">
+                      <p> <span class="heading">Contact Email</span> <span>caronakd@gmail.com</span> </p>
+                    </li> -->
+                    <!--  inset something here-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="container">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <a href="#">Home</a> </li>
+                <li class="nav-item"> <a href="#about">About Us</a> </li>
+                <li class="nav-item "><a href="#services">Services</a>
+                <li class="dropdown"> <a href="#" class="dropdown-tog" data-toggle="dropdown"> Important Links</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"> <a href="https://pan.utiitsl.com/" target="_blank">PAN</a></li>
+                    <li class="nav-item"> <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank">IncomeTax</a></li>
+                    <li class="nav-item"> <a href="https://www.epfindia.gov.in/" target="_blank">PF &amp; ESI</a></li>
+                    <li class="nav-item"> <a href="https://www.icai.org/" target="_blank">CA/CS</a></li>
+                    <li class="nav-item"> <a href="https://www.sci.gov.in/" target="_blank">Supreme Court</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-tog" data-toggle="dropdown"> Calculator</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"> <a href="https://www.amarujala.com/kisan-vikas-patra-calculator" target="_blank">Kisan Vikas Patra</a></li>
+                    <li class="nav-item"> <a href="https://emicalculator.net/" target="_blank">Equated Monthly Installment (EMI)</a></li>
+                    <li class="nav-item"> <a href="https://cleartax.in/paytax/HraCalculatorEmbedPartner" target="_blank">House Rent Allowance (HRA)</a></li>
+                    <li class="nav-item"> <a href="https://www.hruct.co.za/FringeBenefitCalculator" target="_blank">Fringe Benefit Tax (FBT)</a></li>
+                    <li class="nav-item"> <a href="https://eportal.incometax.gov.in/iec/foservices/#/TaxCalc/calculator" target="_blank">Income Tax Calculator</a></li>
+                    <li class="nav-item"> <a href="https://homeloans.sbi/calculators" target="_blank">Home Loan Calculator</a></li>
+                    <li class="nav-item"> <a href="https://groww.in/calculators/nsc-calculator" target="_blank">National Saving Certificates (NSC)</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="" href="#news">News</a></li>
+                <li class="nav-item"><a class="" href="career.html">Career</a></li>
+                <li class="nav-item"><a class="" href="https://cablogindia.com/" target="_top ">Blog</a></li>
+                <li class="nav-item"><a class="" href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+
+      <section id="about" class="hm-about">
+        <div class="contain er">
+          <div class="row aos-init" data-aos="fade-left">
+            <div class="col-lg-5 ml-auto">
+              <div class="rounded p-sm-5 px-3 py-5 about-bg">
+                <h2 class="section-title">About Us </h2>
+                <p><span class="scaText">Ronak Dhoot & Associates&nbsp;</span>
+                  &nbsp;is consultancy firm established in the year 2023, is rendering comprehensive professional services in the areas of Start-up consultancy and registration, Virtual CFO services, Indirect Tax Consultancy(GST), Direct Tax Consultancy (Income Tax) ,Company Law Matters, internal and statutory audits and other Legal Consultancy through a team of qualified CAs, CSs, MBAs and Lawyer to provide you with one-stop solution to all queries.</p>
+                <!--<a href="AboutUs.aspx" class="rd-mr">Readmore <i class="fa fa-angle-right"></i>--></a> </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hm-services">
+        <div class="container">
+          <div id="services" class="page-title fancy-title-underlined text-center aos-init" data-aos="fade-right">
+            <h2>Services <span>We Provide</span></h2>
+          </div>
+          <ul class="row">
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-1.png">
+                <h3>Start-up &amp; Business Registration</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-2.png">
+                <h3>Direct Taxation</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-3.png">
+                <h3>Goods &amp; Service Tax</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-4.png">
+                <h3>ROC Compliances</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-right">
+              <div class="services-box"> <img src="images/serv-5.png">
+                <h3>Audit &amp; Assurance</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-right">
+              <div class="services-box"> <img src="images/serv-6.png">
+                <h3>Licenses &amp; Registrations</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-right">
+              <div class="services-box"> <img src="images/serv-7.png">
+                <h3>Accounting </h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-right">
+              <div class="services-box"> <img src="images/serv-8.png">
+                <h3>Business Advisory &amp; Fundraising</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-9.png">
+                <h3>Intellectual Propoerty Registration</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-10.png">
+                <h3>Legal Contracts</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-10.png">
+                <h3>Website Policies</h3>
+              </div>
+            </li>
+            <li class="aos-init" data-aos="fade-left">
+              <div class="services-box"> <img src="images/serv-10.png">
+                <h3>HR Policies</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container aos-init" class="hm-testimonial">
+        <div  data-aos="fade-right">
+          <div class="page-title fancy-title-underlined text-center ">
+            <h2>What <span>client Say</span></h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-5 pr-0 align-self-center"> <img class="img-fluid w-100" src="images/clients-home.png" alt="clients-image"> </div>
+            <div class="col-lg-7 col-md-7 align-self-center pl-0">
+              <div class="testimonial-slider">
+                <div id="testimonial" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="testimonial-caption"> <i class="icon" class="zoom" class="services-box"> <img src="images/client1.jpg"></i>
+                        <h4 class="font-weight-normal">1.  Palghar1</h4>
+                        <p class="text-dark" class="zoom">It's been a pleasure to work with the Super CA team. They are always friendly, respond quickly, and explain complex tax matters very clearly.</p>
+                        <h6 class="font-secondary text-color">Our Happy Clients</h6>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="testimonial-caption"> <i class="icon"  class="zoom" class="services-box"> <img src="images/client2.png"></i>
+                        <h4 class="font-weight-normal">1.   Palghar2 </h4>
+                        <p class="text-dark" class="zoom">It's been a pleasure to work with the Super CA team. They are always friendly, respond quickly, and explain complex tax matters very clearly.</p>
+                        <h6 class="font-secondary text-color">Our Happy Clients</h6>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="testimonial-caption"> <i class="icon" class="zoom"  class="services-box"> <img src="images/client3.png"> </i>
+                        <h4 class="font-weight-normal">1.   Palghar3 </h4>
+                        <p class="text-dark" class="zoom"> It's been a pleasure to work with the Super CA team. They are always friendly, respond quickly, and explain complex tax matters very clearly.</p>
+                        <h6 class="font-secondary text-color">Our Happy Clients</h6>
+                      </div>
+                    </div>
+                    <a class="carousel-control-left" href="#testimonial" data-slide="prev"> <i class="fa fa-arrow-left"> </i> </a> <a class="carousel-control-right" href="#testimonial" data-slide="next"> <i class="fa fa-arrow-right"> </i> </a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="hm-contact">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-9">
+              <h3 class="text-white"><span>Chartered Accountants&nbsp;</span> Have queries, Contact us</h3>
+            </div>
+            <div class="col-lg-3 text-lg-right align-self-center"> <a href="#" class="btn btn-light">Have A Query ! Ask With Expert</a> </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="news-sec">
+        <div class="container aos-init" data-aos="fade-right">
+          <div class="page-title fancy-title-underlined text-center ">
+            <h2>News, <span>Due Date Reminder</span> and Blog</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4" id="news">
+              <div class="news-box">
+                <h3>News</h3>
+                
+                <marquee id="m2" height="273" direction="up" srolldelay="20" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();">
+                <table id="ctl00_DataList1" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                  <tbody>
+                    <tr>
+                      <td><div class="news2d"> <a class="hedingnews">18 Dec 19</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">Govt Informs 15th FFC About Implausibility of Meeting Revenue Targets of 5 Years</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">No excuses, target over Rs 1 lakh crore GST collection in remaining months</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">GST Council meeting today: Lease rates, refund for exporters on agenda</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">GST Council meeting today. Will Nirmala Sitharaman increase GST rates, slabs?</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">CBIC further extends enabling New Changes in GSTR-9 and GSTR-9C to Dec 21</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a class="hedingnews">17 Dec 19</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">Industry Favours New GSTR Slow Implementation &amp; 4-digits HSN Code</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">Centre releases over Rs 35,000 crore as pending GST compensation to states </a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">States get GST dues ahead of key meet</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">Under Fire, Govt Releases Rs 35,298 Crore GST Compensation to States</a> </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="news2d"> <a href="#">CBDT extends date for Third Instalment of Advance Tax for FY 2019-20 in North Eastern States</a> </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </marquee>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="news-box">
+                <h3>Due Date Reminder</h3>
+                <table id="ctl00_DataListGovind" cellspacing="0" border="0" style="border-collapse:collapse;">
+                <tbody>
+                  <tr>
+                    <td><a id="ctl00_DataListGovind_ctl00_lb1" href="#">Jan</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl01_lb1" href="#">Feb</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl02_lb1" href="#">Mar</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl03_lb1" href="#">Apr</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl04_lb1" href="#">May</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl05_lb1" href="#">June</a></td>
+                  </tr>
+                  <tr>
+                    <td><a id="ctl00_DataListGovind_ctl06_lb1" href="#">July</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl07_lb1" href="#">Aug</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl08_lb1" href="#">Sep</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl09_lb1" href="#">Oct</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl10_lb1" href="#">Nov</a></td>
+                    <td><a id="ctl00_DataListGovind_ctl11_lb1" href="#">Dec</a></td>
+                  </tr>
+                  <tr>
+                    <td><a id="ctl00_DataListGovind_ctl12_lb1" href="#">All</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                <marquee id="ml" height="193" direction="up" srolldelay="20" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();">
+                <div class="news_blog"> <span class="hedingnews">30 Dec 19</span> <span class="arrownews">furnishing of challan-cum-statement in respect of tax deducted u/s 194-IA in month of November 19</span> <br>
+                </div>
+                <div class="news_blog"> <span class="hedingnews">30 Dec 19</span> <span class="arrownews">Due date for furnishing of challan-cum-statement in respect of tax deducted u/s 194-IB in month of November 19</span> <br>
+                </div>
+                <div class="news_blog"> <span class="hedingnews">07 Jan 20</span> <span class="arrownews">Payment of TDS of December 2019 (For Govt deductors paying through challan)</span> <br>
+                </div>
+                <div class="news_blog"> <span class="hedingnews">11 Jan 20</span> <span class="arrownews">Filing of GSTR-1 for the month of Dec, 2019 , whose turnover &gt; 1.5cr</span> <br>
+                </div>
+                <div class="news_blog"> <span class="hedingnews">13 Jan 20</span> <span class="arrownews">Filing of GSTR-6 for input service distributor for the month of December 2019</span> <br>
+                </div>
+                </marquee>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="news-box">
+              <h3>Blog News</h3>
+                <marquee id="m2" height="273" direction="up" srolldelay="20" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();">
+                
+                <li class="Prodetails"><span style="font-weight:bold;">09 Dec 2019</span> <span style="font-weight:bold;"><a target="_blank" href="#">About Us</a> -</span> <span>ASSOCIATES&nbsp;is a professional firm of Chartered Accountants s...</span></li>
+                </marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 aos-init" data-aos="fade-right">
+              <h3>Who we are</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 aos-init" data-aos="fade-right">
+              <h3>What we do</h3>
+              <ul>
+                <li><a href="#">Proprietorship</a></li>
+                <li><a href="#">Partnership</a></li>
+                <li><a href="#">One Person Company</a></li>
+                <li><a href="#">Limited Liability Partnership</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 aos-init" data-aos="fade-left">
+              <h3>Important Link</h3>
+              <ul>
+                <li><a href="https://www.incometax.gov.in/iec/foportal/" target="_blank">Income Tax Dept.</a></li>
+                <li><a href="https://www.cbic.gov.in/" target="_blank">Central Board of Excise &amp; Customs</a></li>
+                <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html" target="_blank">Ministry of Corporate Affairs</a></li>
+                <li><a href="https://www.epfindia.gov.in/site_en/index.php" target="_blank">Employees Provident Fund</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 aos-init" data-aos="fade-left" id="contact">
+              <h3>Contact Us</h3>
+              <p>Shop-no -134,First floor,Kanchan business centre,Near Kalavati Mata Mandir,manor-mahim highway,Palghar(W)-401404</p>
+              <p><a href="tel:7058256866">+91 7058256866</a></p>
+              <p><a href="mailto:caronakd@gmail.com">caronakd@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right" >
+          
+          <div >Release No :<strong>Prototype</strong> 1.0 </div>
+          <div> © 2024 <strong>Awasthidev</strong>. All Rights Reserved</div>
+
+
+        </div>
+      </footer>
+    </div>
+    <script src="./js/aos.js" type="text/javascript"></script> 
+    <script>
+    $(function(){
+      $(window).scroll(function(){
+        var winTop = $(window).scrollTop();
+        if(winTop >= 30){
+          $(".header").addClass("sticky-header");
+        }else{
+          $(".header").removeClass("sticky-header");
+        }//if-else
+      });//win func.
+    });//ready func.
+    </script> 
+    <script>
+          AOS.init({
+            easing: 'ease-in-out-sine'
+          });
+        </script> 
+    <script>
+          AOS.init({
+            easing: 'ease-in-out-sine'
+          });
+        </script> 
+    <script src="./js/jquery.themepunchtools.min.js"></script> 
+    <script src="./js/jquery.themepunch.revolution.min.js"></script> 
+    <script>
+    
+    (function($) { 
+    
+        "use strict";
+        
+        /* ================ Revolution Slider. ================ */
+        if($('.tp-banner').length > 0){
+            $('.tp-banner').show().revolution({
+                delay:6000,
+                startheight: 600,
+                startwidth: 1040,
+                hideThumbs: 1000,
+                navigationType: 'none',
+                touchenabled: 'on',
+                onHoverStop: 'on',
+                navOffsetHorizontal: 0,
+                navOffsetVertical: 0,
+                dottedOverlay: 'none',
+                fullWidth: 'on'
+            });
+        }
+        if($('.tp-banner-full').length > 0){
+            $('.tp-banner-full').show().revolution({
+                delay:6000,
+                hideThumbs: 1000,
+                navigationType: 'none',
+                touchenabled: 'on',
+                onHoverStop: 'on',
+                navOffsetHorizontal: 0,
+                navOffsetVertical: 0,
+                dottedOverlay: 'none',
+                fullScreen: 'on'
+            });
+        }
+        })(jQuery);
+    </script>
+    
+    </body></html>
